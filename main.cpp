@@ -19,7 +19,7 @@ int main(){
 		cout << erreur << endl;
 	}
     #ifdef _WIN32
-        system("dir");
+        system("pause");
     #endif
 	return 0;
 }
