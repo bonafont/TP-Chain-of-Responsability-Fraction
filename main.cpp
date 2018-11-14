@@ -6,9 +6,9 @@ using namespace std;
 
 int main(){	
 	#ifdef _WIN32
-	SetConsoleOutputCP(CP_UTF7);
+	SetConsoleOutputCP(CP_UTF8);
 	#endif
-	ifstream testfichier("Fractions.txt", ifstream::in);
+	ifstream testfichier("Fra2ctions.txt", ifstream::in);
 	try {
 		vector<Fraction>* test = ChargeurListeFraction::charge(testfichier);
 		for (Fraction n : *test)
