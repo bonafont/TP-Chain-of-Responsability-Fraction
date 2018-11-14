@@ -8,7 +8,7 @@ int main(){
 	#ifdef _WIN32
 	SetConsoleOutputCP(CP_UTF7);
 	#endif
-	ifstream testfichier("Fractiosns.txt", ifstream::in);
+	ifstream testfichier("Fractions.txt", ifstream::in);
 	try {
 		vector<Fraction>* test = ChargeurListeFraction::charge(testfichier);
 		for (Fraction n : *test)
@@ -18,6 +18,6 @@ int main(){
 	catch (const char* erreur) {
 		cout << erreur << endl;
 	}
-	system("pause");
+	system("dir");
 	return 0;
 }
