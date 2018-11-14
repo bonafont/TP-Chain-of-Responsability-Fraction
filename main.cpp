@@ -18,6 +18,8 @@ int main(){
 	catch (const char* erreur) {
 		cout << erreur << endl;
 	}
-	system("dir");
+    #ifdef _WIN32
+        system("dir");
+    #endif
 	return 0;
 }

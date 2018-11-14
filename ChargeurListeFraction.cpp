@@ -11,13 +11,13 @@ vector<Fraction>* ChargeurListeFraction::charge(ifstream& testfichier)
 	int nbstring = 0;
 	int index = 0;
 	char** listeString = new char*[nbstring + 1];
-	char current_char = NULL;
+	char current_char;
 	if (testfichier.good()) {
 		current_char = testfichier.get();
 		listeString[nbstring] = new char[100];
 	}
 	else
-		throw "Erreur fichier non trouvé";
+		throw "Erreur fichier non trouvÃ©";
 	while (testfichier.good()) {
 		if (current_char == '\n') {
 			listeString[nbstring][index] = '\0';
